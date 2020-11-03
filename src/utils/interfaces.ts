@@ -1,3 +1,4 @@
+import { ReactNode } from 'react'
 import { ViewStyle, TextStyle, ImageStyle } from 'react-native'
 
 export type StaticStyle = ViewStyle | TextStyle | ImageStyle
@@ -9,3 +10,13 @@ export type StaticStyles = {
 export type ThemedStyles<Theme> = (theme: Theme) => StaticStyle
 
 export type Styles<Theme> = ThemedStyles<Theme> | StaticStyles
+
+export type InnerProps<Theme, Styles> = {
+
+  children?: ReactNode
+
+  styles: Styles
+
+  theme: Theme
+
+}

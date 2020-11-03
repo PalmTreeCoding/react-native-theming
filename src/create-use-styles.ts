@@ -2,20 +2,24 @@ import React from 'react'
 import { StyleSheet } from 'react-native'
 import { useTheme } from 'theming'
 
-import { Styles, ThemedStyles } from './interfaces'
+import { Styles, ThemedStyles } from './utils/interfaces'
 
-export const createUseStyles = <Theme = any>(styles: Styles<Theme>) => {
+export function createUseStyles<Theme = any>(styles: Styles<Theme>) {
   const areDynamicStyles = typeof styles === 'function'
 
-  return function useStyles() {
+  return function useStyles(): [StyleSheet.NamedStyles<any>, Theme] {
     const theme = useTheme<Theme>()
 
-    return React.useMemo(() => {
+    // Generate and cache the styles
+    const generateStyles = React.useMemo(() => {
       return StyleSheet.create(
         areDynamicStyles
           ? (styles as ThemedStyles<Theme>)(theme)
           : styles
-      )
+      ) as StyleSheet.NamedStyles<any>
     }, [theme])
+
+    // Return generated styles and used theme
+    return [generateStyles, theme]
   }
 }
