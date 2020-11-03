@@ -1,7 +1,7 @@
 {
   "name": "@palmtreecoding/react-native-theming",
   "description": "Easy to use and setup theming and styling for React Native",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "license": "MIT",
