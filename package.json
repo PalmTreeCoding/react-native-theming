@@ -1,15 +1,21 @@
 {
   "name": "@palmtreecoding/react-native-theming",
-  "description": "Easy to use and setup theming and styling for React Native",
   "version": "0.0.1",
+  "description": "Easy to use and setup theming and styling for React Native",
+  "license": "MIT",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "license": "MIT",
   "files": [
     "lib/**/*"
   ],
   "scripts": {
-    "build": "tsc --project ./tsconfig.json"
+    "build": "tsc --project ./tsconfig.json",
+    "build:watch": "yarn build --watch"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-native": "^0.63.3",
+    "theming": "^3.3.0"
   },
   "devDependencies": {
     "@types/react": "^16.9.55",
@@ -19,10 +25,5 @@
   "peerDependencies": {
     "react": ">=16.3",
     "react-native": ">=60"
-  },
-  "dependencies": {
-    "react": "^17.0.1",
-    "react-native": "^0.63.3",
-    "theming": "^3.3.0"
   }
 }
