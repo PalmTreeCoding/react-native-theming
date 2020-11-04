@@ -1,18 +1,32 @@
-# [0.2.0](https://github.com/PalmTreeCoding/react-native-theming/compare/v0.1.0...v0.2.0) (2020-11-03)
+# [1.0.0](https://github.com/palmtreecoding/react-native-theming/compare/v0.2.0...v1.0.0) (2020-11-04)
 
 
 ### Features
 
-* **with-styles:** Added decorator ([dc2c319](https://github.com/PalmTreeCoding/react-native-theming/commit/dc2c319b518039d02df1792c83cb3066d094082d))
+* First release ([bc73820](https://github.com/palmtreecoding/react-native-theming/commit/bc738202ca8fc407aef395332cd0917b1682e35c))
+
+
+### BREAKING CHANGES
+
+* First release
 
 
 
-# [0.1.0](https://github.com/PalmTreeCoding/react-native-theming/compare/f6213ea60e0b3732a8ca6d47d6d07cd0c764d696...v0.1.0) (2020-11-03)
+# [0.2.0](https://github.com/palmtreecoding/react-native-theming/compare/v0.1.0...v0.2.0) (2020-11-03)
 
 
 ### Features
 
-* Added createUseStyles ([f6213ea](https://github.com/PalmTreeCoding/react-native-theming/commit/f6213ea60e0b3732a8ca6d47d6d07cd0c764d696))
+* **with-styles:** Added decorator ([dc2c319](https://github.com/palmtreecoding/react-native-theming/commit/dc2c319b518039d02df1792c83cb3066d094082d))
+
+
+
+# [0.1.0](https://github.com/palmtreecoding/react-native-theming/compare/f6213ea60e0b3732a8ca6d47d6d07cd0c764d696...v0.1.0) (2020-11-03)
+
+
+### Features
+
+* Added createUseStyles ([f6213ea](https://github.com/palmtreecoding/react-native-theming/commit/f6213ea60e0b3732a8ca6d47d6d07cd0c764d696))
 
 
 
