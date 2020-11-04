@@ -7,9 +7,9 @@ export type StaticStyles = {
   [key: string]: StaticStyle
 }
 
-export type ThemedStyles<Theme> = (theme: Theme) => StaticStyle
+export type ThemedStyles<Theme = any> = (theme: Theme) => StaticStyles
 
-export type Styles<Theme> = ThemedStyles<Theme> | StaticStyles
+export type Styles<Theme = any> = StaticStyles | ThemedStyles<Theme>
 
 export type InnerProps<Theme, Styles> = {
 

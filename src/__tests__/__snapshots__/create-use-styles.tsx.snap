@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`withStyles should add static styles to the component 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "pink",
+    }
+  }
+/>
+`;
+
+exports[`withStyles should add themed styles to the component 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "green",
+    }
+  }
+/>
+`;

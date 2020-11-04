@@ -27,13 +27,26 @@ jobs:
           path: '**/node_modules'
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
 
+      - name: test
+        run: yarn test:ci
+
       - name: build
         run: yarn build
 
       - name: Conventional Changelog Action
         uses: TriPSs/conventional-changelog-action@v3
+        id: changelog
         with:
           github-token: ${{ secrets.github_token }}
+
+      - name: Create Release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.github_token }}
+        with:
+          tag_name: ${{ steps.changelog.outputs.tag }}
+          release_name: ${{ steps.changelog.outputs.tag }}
+          body: ${{ steps.changelog.outputs.clean_changelog }}
 
       - name: publish
         run: |
