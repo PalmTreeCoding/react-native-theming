@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native'
 
-import { Styles, ThemedStyles } from './interfaces'
+import { NamedStyles, Styles, ThemedStyles } from './interfaces'
 
 export function createStyles<Theme = any>(styles: Styles<Theme>, theme: Theme) {
   const areDynamicStyles = typeof styles === 'function'
@@ -9,6 +9,6 @@ export function createStyles<Theme = any>(styles: Styles<Theme>, theme: Theme) {
     areDynamicStyles
       ? (styles as ThemedStyles<Theme>)(theme)
       : styles
-  ) as StyleSheet.NamedStyles<any>
+  ) as NamedStyles
 }
 

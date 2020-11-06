@@ -1,12 +1,11 @@
 import React from 'react'
-import { StyleSheet } from 'react-native'
 import { useTheme } from 'theming'
 
-import { Styles, ThemedStyles } from './utils/interfaces'
+import { Styles, NamedStyles } from './utils/interfaces'
 import { createStyles } from './utils/create-styles'
 
 export function createUseStyles<Theme = any>(styles: Styles<Theme>) {
-  return function useStyles(): [StyleSheet.NamedStyles<any>, Theme] {
+  return function useStyles(): [NamedStyles, Theme] {
     const theme = useTheme<Theme>()
 
     // Generate and cache the styles

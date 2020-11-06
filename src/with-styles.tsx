@@ -4,7 +4,7 @@ import { createUseStyles } from './create-use-styles'
 import { InnerProps, Styles } from './utils/interfaces'
 
 export function withStyles<Theme = any>(styles: Styles<Theme>) {
-  return function <Props = InnerProps<Theme, typeof styles>>(
+  return function <Props = InnerProps<Theme>>(
     InnerComponent: React.FC<Props>
   ): React.FC<Props> {
     const useStyles = createUseStyles(styles)
