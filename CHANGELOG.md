@@ -1,3 +1,12 @@
+# [1.1.0](https://github.com/palmtreecoding/react-native-theming/compare/v1.0.1...v1.1.0) (2020-11-06)
+
+
+### Features
+
+* Export all interfaces ([6876a0c](https://github.com/palmtreecoding/react-native-theming/commit/6876a0cecd9f5a366c66105995b34f12a6908141))
+
+
+
 ## [1.0.1](https://github.com/palmtreecoding/react-native-theming/compare/v1.0.0...v1.0.1) (2020-11-06)
 
 
