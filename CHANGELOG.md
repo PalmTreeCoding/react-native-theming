@@ -1,3 +1,12 @@
+## [1.0.1](https://github.com/palmtreecoding/react-native-theming/compare/v1.0.0...v1.0.1) (2020-11-06)
+
+
+### Bug Fixes
+
+* Small type fixes ([48b8a58](https://github.com/palmtreecoding/react-native-theming/commit/48b8a583a96117e892c80ed72fbbea959d4ca704))
+
+
+
 # [1.0.0](https://github.com/palmtreecoding/react-native-theming/compare/v0.2.0...v1.0.0) (2020-11-04)
 
 
